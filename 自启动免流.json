@@ -1,0 +1,12 @@
+[
+    {
+        "name": "开机免流",
+        "description": "当系统启动完成时,自动开启免流脚本",
+        "priority": 1,
+        "condition": "systemReady == true",
+        "actions": [
+            "sh.exe(\"/system/ZJL/开启.sh\")",
+            "ui.showShortToast(\"免流已开启\")"
+        ]
+    }
+]
